@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 const { Schema, model } = mongoose;
 
-const droneSchema = new DroneSchema({
+const droneSchema = new Schema({
   name: String,
   propellers: Number,
   maxSpeed: Number,

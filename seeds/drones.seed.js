@@ -1,7 +1,7 @@
 // Iteration #1
 const mongoose = require("mongoose");
 const Drone = require("../models/Drone.model");
-require("../db");
+require("../db/index");
 
 const drones = [
   { name: "Creeper XL 500", propellers: 3, maxSpeed: 12 },
@@ -11,7 +11,10 @@ const drones = [
 
 Drone.create(drones)
   .then((createdDrones) => {
-    console.log(`You've just created ${createdDrones.length} drones`);
+    console.log(
+      `You've just created ${createdDrones.length} drones`,
+      createdDrones
+    );
     mongoose.connection.close();
   })
   .catch((err) => {
