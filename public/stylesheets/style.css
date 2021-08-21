@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/938610.jpg);
+  color: white;
 }
 
 a {
@@ -9,4 +11,5 @@ a {
 }
 button {
   border-radius: 5px;
+  color: #00b7ff;
 }
